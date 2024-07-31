@@ -1,0 +1,183 @@
+* {
+    margin : 0px;
+    padding: 0px;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+header {
+    /* flex means if we zoom in and out automatixally ajust spaeacing */
+    display : flex;
+    background-color : #ffffff;
+    height : 80px;
+    /* horizontaly align : space-between means started from corner */
+    justify-content : space-between;
+    /* for verticly center */
+    align-items : center;
+    border-bottom : 1px solid #e3e5e9;
+}
+.myntra_home {
+    height : 45px;
+}
+.logo-container {
+    margin-left : 4%;
+}
+.action_bar {
+    /* full screen left 4% from both side */
+    margin-right : 4%;
+}
+.nav_bar {
+    /* to equaly space between texts use dispaly flex */
+    display : flex;
+    /* min width  means doesn't matter of nav bar width but navbar width should be  */
+    min-width : 500px;
+    /* full-fill your extra spaces and space-between equally */
+    justify-content : space-evenly;
+}
+
+.nav_bar a {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    /* font-weight could be 100-900 */
+    font-weight: 700;
+    text-transform: uppercase;
+    /* text-decoration  none mean no underline; */
+    text-decoration : none;
+    padding : 28px 0 ;
+    /* the navigation will shown in the border and only the nanvigation color will be change here ; */
+    border-bottom : 4px solid #ffffff;
+}
+
+.nav_bar a:hover {
+    /* It will only come under the name icon */
+    border-bottom : 4px solid #f54e77;
+    /* inspect in the page and cheek the padding on the page and put value here */
+}
+ 
+/* i can use separate design for super script because maybe i'm usig it anotherwhere so, 
+i don't want mess-up that's why i'm using super script separately */
+.nav_bar a sup {
+    color: #ff3f6c;
+    font-size : 10px;
+}
+
+.search_bar {
+    height : 40px;
+    /* min width define as 200px not shorter than this after a  min page compression */
+    min-width : 200px;
+    /* it will define as 30% of the total page width */
+    min-width : 30%;
+    /* display flex means bar will take full area */
+    display : flex;
+    /* all items will be center by axis wise */
+    align-items : center;
+}
+
+.search_icon { 
+    /* content box  */
+    box-sizing : content-box;
+    /* height taken only for icon */
+    height : 20px;
+    padding : 10px;
+    background-color: #f5f5f6;
+    color: #282c3f;
+    font-weight : 300;
+    /* only given to the left side and right side to be shown adjustable with serch bar */
+    border-radius : 4px 0 0 4px;
+}
+
+.search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
+    /* it will take the full space of search bar */
+    flex-grow : 1;
+    height : 40px;
+    border : 0;
+
+    border-radius : 0 4px 4px 0;
+}
+
+.action_bar {
+    display : flex;
+    /* it will gives the min width of icons and items are starts from the left side */
+    min-width : 200px;
+    /* it will perform spaces between the icons */
+    justify-content : space-evenly;
+}
+
+.action_container {
+    display : flex;
+    /* the name will be goes under the logo */
+    flex-direction : column;
+    /* center by cross axis */
+    align-items : center;
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Main Section <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.banner_container {
+    margin : 40px 0;
+}
+.banner_image {
+    /* witdth is given as percentage and it will  cover the full width of the page section */
+    width : 100%;
+    height : auto;
+}
+.category_heading {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+.category_items {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : space-evenly;
+}
+.sale_item {
+    width : 250px;
+}
+
+/* Footer Container */
+
+.footer_container {
+    padding : 30px 0 40px 0;
+    background : #FAFBFC;
+    display : flex;
+    justify-content : space-evenly;
+}
+
+.footer_column {
+    display : flex;
+    flex-direction : column;
+}
+
+.footer_column h3 {
+    color: #282c3f;
+    display: block;
+    font-size: 12px;
+    /* text-decoration: none; */
+    margin-bottom : 25px;
+    /* padding-bottom: 5px; */
+}
+
+/* Styling of footer Column */
+.footer_column a {
+    color: #696b79;
+    /* display: block; */
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px
+}
+
+.copyright {
+    color: #94969f;
+    /* margin-left: 100px; */
+    text-align : end;
+    padding : 15px;
+    
+}
